@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 Route::get('/wx/token','TestController@getAccessToken');
 Route::get('/wx/token2','TestController@getAccessToken2');
+Route::get('/wx/token3','TestController@getAccessToken3');
+
