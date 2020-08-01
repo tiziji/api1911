@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="http://1911tzj.comcto.com/oauth/git?ClientId=cdcf92fed2e888969fcb&ClientSecret=8ae9fc2dd8df15aaff41602eae89135efff45229">GitHub</a>
+                    <a href="https://github.com/login/oauth/authorize?client_id=cdcf92fed2e888969fcb&redirect_uri=http://1911tzj.comcto.com/oauth/git">GitHub</a>
                 </div>
             </div>
         </div>

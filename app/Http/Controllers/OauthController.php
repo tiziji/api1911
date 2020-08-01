@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class OauthController extends Controller
 {
     public function git(){
-        dd(request()->all());
+        $code=$_GET['code'];
+        dd($code);
     }
 }
