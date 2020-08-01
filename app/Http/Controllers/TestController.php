@@ -125,8 +125,11 @@ class TestController extends Controller
 //        dd($sign);
         $url="http://api.1911.com/aessign?data=".urlencode($data)."&sign=".urlencode($sign);
 
-        $response=file_get_contents($url);6
+        $response=file_get_contents($url);
         echo $response;
+     }
+     public function test3(){
+       print_r($_SERVER);
      }
 }
 

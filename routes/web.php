@@ -23,4 +23,14 @@ Route::get('/jiami','TestController@jiami');
 Route::get('/aes','TestController@aes');
 Route::get('/sign','TestController@sign');
 Route::get('/aessign','TestController@aessign');
+Route::get('/test3','TestController@test3');
+
+
+
+
+Route::any('/login','Admin\LoginController@login');
+Route::post('/logindo','Admin\LoginController@logindo');
+Route::get('/reg','Admin\RegController@reg');
+Route::get('/index','Admin\IndexController@index');
+Route::get('/oauth/git','OauthController@git');
 
