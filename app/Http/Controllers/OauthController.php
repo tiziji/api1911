@@ -9,7 +9,8 @@ class OauthController extends Controller
 {
     public function git(){
         $code=$_GET['code'];
-         dd($this->getToken($code));
+         $as=$this->getToken($code);
+         echo $as;die;
         echo '<pre>';print_r($_GET);echo '</pre>';
     }
     protected function getToken($code)
@@ -21,14 +22,13 @@ class OauthController extends Controller
         $response=$client->request("POST",$url,[
             'form_params'=>[
                 'client_id'=>'cdcf92fed2e888969fcb',
-                'redirect_uri'=>'8ae9fc2dd8df15aaff41602eae89135efff45229',
+                'client_secret'=>'http://1911tzj.comcto.com/oauth/git',
                 'code'=>$code
             ]
         ]);
-        $response_data=$response->getBody();
-        echo $response_data;die;
-
-        $token = "";
+       $responseData=$response->getBody();
+        $token =$responseData['access_token'];
+        dd($token);
         // 拿到token  获取用户信息
 
         $this->getGithubUserInfo($token);
